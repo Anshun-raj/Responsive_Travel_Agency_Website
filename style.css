@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+.header {
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    position: sticky;
+}
+
+.header .logo {
+    width: 50%;
+    cursor: pointer;
+}
+
+.header .logo h2 {
+    color: #fff;
+}
+
+.header .logo span {
+    color: aqua;
+}
+
+.header .toggleBtn {
+    color: #fff;
+    display: none;
+}
+
+.header .toggleBtn1 {
+    color: #fff;
+    display: none;
+}
+
+.header .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .navbar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+
+}
+
+.header .navbar ul li {
+    list-style: none;
+}
+
+.header .navbar ul li a {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.5s ease-in-out linear;
+}
+
+.header .navbar ul li a:hover {
+    color: aqua;
+    border-bottom: 3px solid #fff;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 90vh;
+    max-width: 100%;
+    background: url(./images/home-bg.jpg);
+}
+
+.home .homeLeft {
+    width: 40%;
+}
+
+.home .homeRight {
+    width: 40%;
+}
+
+.home .homeRight .homeImg {
+    position: relative;
+    width: 25vw;
+    top: 2%;
+    left: 30%;
+    height: 85vh;
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+}
+
+.home .homeLeft h2 {
+    font-size: 9vh;
+    padding-top: 90px;
+    color: #fff;
+}
+
+.about {
+    height: 90vh;
+    max-width: 100%;
+    background: url(./images/about-bg.jpg);
+    margin: 50px 0;
+}
+
+.about h2 {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 6vh;
+    text-decoration: underline 2px solid red;
+}
+
+.about .aboutData {
+    width: 60%;
+    height: 70vh;
+    margin: auto;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+
+
+.about .aboutData h3 {
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 4.5vh;
+}
+
+.about .aboutData p {
+    text-align: center;
+    font-size: 3.7vh;
+    line-height: 4.5vh;
+    color: aqua;
+}
+
+.tour {
+    min-height: 90vh;
+    max-width: 100%;
+    background: url(./images/tour-bg.jpg);
+}
+
+.tour h2 {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 6vh;
+    text-decoration: underline 2px solid red;
+}
+
+.tour .tourData {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tour .tourData .tourBox {
+    width: 25vw;
+    height: 36vh;
+    border: 2px solid #fff;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px 0px #fff;
+    border-radius: 5px;
+}
+
+
+.tour .tourData .tourBox a {
+    padding: 8px 10px;
+    background-color: #fff;
+    color: black;
+    margin: 0 5px 0 35px;
+    border-radius: 2px;
+    font-weight: 400;
+    transition: 0.5s all;
+}
+
+.tour .tourData .tourBox a:hover {
+    color: #fff;
+    background-color: red;
+}
+
+.tour .tourData .tourBox h3 {
+    margin-left: 35px;
+    color: #fff;
+}
+
+.tour .tourData .tourBox p {
+    margin-left: 35px;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.tour .tourData .tourBox .tourImg {
+    width: 20vw;
+    height: 20vh;
+    margin: 10px 0 5px 35px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.destination {
+    min-height: 90vh;
+    max-width: 100%;
+    background: url(./images/destination-bg.jpg);
+    margin: 50px 0;
+}
+
+.destination h2 {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 6vh;
+    text-decoration: underline 2px solid red;
+}
+
+.destination .destinationData {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.destination .destinationData .destinationBox .destinationImg {
+    width: 25vw;
+    height: 35vh;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 15px 0px #fff;
+    border-radius: 5px;
+}
+
+.contact {
+    min-height: 90vh;
+    max-width: 100%;
+    background: url(./images/contact-bg.jpg);
+    margin-top: 50px;
+}
+
+.contact h2 {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 6vh;
+    text-decoration: underline 2px solid red;
+}
+
+.contact .contactData {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact .contactData .map {
+    width: 35vw;
+    height: 70vh;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 #000;
+}
+
+.contact .contactData .collectData {
+    width: 35vw;
+    height: 70vh;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 #000;
+}
+
+.contact .contactData h3 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 3vh;
+}
+
+.contact .collectData form input {
+    width: 30vw;
+    height: 6vh;
+    margin: 20px 0 10px 35px;
+    padding: 3px 0 3px 3px;
+    border-radius: 5px;
+}
+
+.contact .collectData form textarea {
+    width: 30vw;
+    height: 14vh;
+    margin: 20px 0 10px 35px;
+    padding: 5px 0 0px 5px;
+    border-radius: 5px;
+}
+
+.contact .collectData form input::placeholder {
+    font-size: 16px;
+    color: red;
+}
+
+.contact .collectData form textarea::placeholder {
+    color: red;
+    font-size: 16px;
+}
+
+.contact .collectData form .submitBtn {
+    padding: 10px;
+    margin: 20px 0 10px 35px;
+    font-weight: 600;
+    color: #fff;
+    background-color: red;
+    border-radius: 5px;
+    transition: 0.5s all;
+}
+
+.contact .collectData form .submitBtn:hover {
+    background-color: #000;
+}
+
+
+@media(max-width:1140px) {
+    .header .navbar {
+        justify-content: flex-end;
+    }
+
+    .header .navbar ul {
+        display: none;
+        position: absolute;
+        left: 0%;
+        background: rgba(0, 0, 0, 0.55);
+        top: 0.5%;
+        width: 40%;
+        height: 40vh;
+    }
+
+    .header .navbar ul li {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .header .navbar ul li a:hover {
+        border-bottom: none;
+        color: rgb(154, 254, 4);
+    }
+
+    .header .navbar .toggleBtn {
+        display: block;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home .homeLeft {
+        width: 100%;
+    }
+
+    .home .homeRight {
+        width: 100%;
+    }
+
+    .home .homeLeft h2 {
+        font-size: 5vh;
+        text-align: center;
+    }
+
+    .home .homeRight .homeImg {
+        width: 70vw;
+        top: 5%;
+        height: 50vh;
+        left: 15%;
+    }
+
+    .about .aboutData {
+        width: 60%;
+        height: 75vh;
+        margin: auto;
+        border: 2px solid #fff;
+        border-radius: 5px;
+    }
+
+
+    .about .aboutData h3 {
+        padding: 5px 0;
+        font-size: 4vh;
+    }
+
+    .about .aboutData p {
+        font-size: 3.75vh;
+        line-height: 4.2vh;
+    }
+
+    .contact .collectData form input {
+        margin-left: 15px;
+    }
+
+    .contact .collectData form textarea {
+        margin-left: 15px;
+    }
+
+
+
+
+}
+
+@media(max-width:1000px) {
+    .about h2 {
+        font-size: 4.5vh;
+    }
+
+    .about .aboutData h3 {
+        padding: 5px 0;
+    }
+
+
+    .about .aboutData p {
+        font-size: 2.65vh;
+        line-height: 2.85vh;
+    }
+
+    .tour h2 {
+        font-size: 24px;
+    }
+
+    .tour .tourData .tourBox {
+        width: 35vw;
+        height: 30vh;
+    }
+
+
+    .tour .tourData .tourBox h3 {
+        font-size: 28px;
+    }
+
+    .tour .tourData .tourBox p {
+        font-size: 22px;
+    }
+
+    .tour .tourData .tourBox a {
+        padding: 4px 6px;
+        font-weight: 500;
+    }
+
+
+    .tour .tourData .tourBox .tourImg {
+        height: 15vh;
+    }
+
+    .destination .destinationData .destinationBox .destinationImg {
+        width: 35vw;
+    }
+
+    .contact .contactData .map {
+        width: 60vw;
+        height: 70vh;
+        margin-bottom: 30px;
+    }
+
+    .contact .contactData .collectData {
+        width: 60vw;
+        height: 70vh;
+        margin-bottom: 30px;
+    }
+
+    .contact .contactData .collectData form input {
+        margin-left: 50px;
+        width: 50vw;
+    }
+
+    .contact .contactData .collectData form input::placeholder {
+        font-size: 32px;
+    }
+
+    .contact .contactData .collectData form textarea {
+        margin-left: 50px;
+        width: 50vw;
+    }
+
+
+    .contact .contactData .collectData form textarea::placeholder {
+        font-size: 32px;
+    }
+
+    .contact .contactData .collectData form .submitBtn {
+        margin-left: 50px;
+        font-size: 26px;
+    }
+
+}
+
+@media(max-width:768px) {
+    .about h2 {
+        font-size: 4.5vh;
+    }
+
+    .about .aboutData h3 {
+        font-size: 3.5vh;
+        padding: 5px 0;
+    }
+
+    .about .aboutData p {
+        font-size: 2.8vh;
+        line-height: 3vh;
+    }
+
+
+    .tour .tourData .tourBox h3 {
+        font-size: 36px;
+    }
+
+    .tour .tourData .tourBox p {
+        font-size: 26px;
+    }
+
+    .tour h2 {
+        font-size: 24px;
+    }
+
+    .tour .tourData .tourBox {
+        width: 35vw;
+        height: 30vh;
+    }
+
+
+    .tour .tourData .tourBox h3 {
+        font-size: 14px;
+    }
+
+    .tour .tourData .tourBox p {
+        font-size: 12px;
+    }
+
+    .tour .tourData .tourBox a {
+        padding: 4px 6px;
+        font-weight: 500;
+    }
+
+
+    .tour .tourData .tourBox .tourImg {
+        height: 15vh;
+    }
+
+    .destination .destinationData .destinationBox .destinationImg {
+        width: 35vw;
+    }
+
+    .contact .contactData .map {
+        width: 60vw;
+        height: 70vh;
+        margin-bottom: 30px;
+    }
+
+    .contact .contactData .collectData {
+        width: 60vw;
+        height: 70vh;
+        margin-bottom: 30px;
+    }
+
+    .contact .contactData .collectData form input {
+        margin-left: 20px;
+    }
+
+    .contact .contactData .collectData form textarea {
+        margin-left: 20px;
+    }
+
+    .contact .contactData .collectData form .submitBtn {
+        margin-left: 20px;
+        font-size: 26px;
+    }
+
+    .contact .contactData .collectData form input::placeholder {
+        font-size: 24px;
+    }
+
+    .contact .contactData .collectData form textarea::placeholder {
+        font-size: 24px;
+    }
+
+}
+
+@media(max-width:500px) {
+    .about h2 {
+        font-size: 3vh;
+    }
+
+    .about .aboutData h3 {
+        padding: 5px 0;
+        font-size: 2.5vh;
+    }
+
+    .about .aboutData p {
+        font-size: 2.30vh;
+        line-height: 2.2vh;
+    }
+
+    .contact .contactData .collectData form .submitBtn {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:360px) {
+
+    .home .homeLeft h2 {
+        font-size: 4vh;
+    }
+
+    .about .aboutData h3 {
+        padding: 5px 0;
+    }
+
+    .about .aboutData p {
+        font-size: 2vh;
+    }
+
+    .tour .tourData .tourBox {
+        width: 40vw;
+    }
+
+    .tour .tourData .tourBox .tourImg {
+        height: 15vh;
+    }
+
+    .destination .destinationData .destinationBox .destinationImg {
+        width: 35vw;
+    }
+
+    .contact .contactData .collectData form input {
+        width: 45vw;
+        margin: 20px;
+    }
+
+    .contact .contactData .collectData form textarea {
+        width: 45vw;
+        height: 10vh;
+        margin: 20px;
+    }
+
+    .contact .contactData .collectData form .submitBtn {
+        padding: 15px;
+        font-size: 14px;
+    }
+}

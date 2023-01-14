@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Travel Website</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="header">
+      <div class="logo">
+         <h2>Hodo<span>philic</span></h2>
+      </div>
+      <div class="navbar">
+         <ul id="navbar">
+            <li><a href="#home">phome</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#tours">tours</a></li>
+            <li><a href="#destination">destination</a></li>
+            <li><a href="#contact">contact</a></li>
+         </ul>
+         <span class="toggleBtn" onclick="show()" id="bar"><i class="fas fa-bars"></i></span>
+         <span class="toggleBtn1" onclick="hide()" id="close"><i class="fas fa-times"></i></span>
+      </div>
+   </div>
+   <div class="home" id="home">
+      <div class="homeLeft">
+         <h2>&quot;Wherever you go becomes a part of you somehow.&quot;</h2>
+      </div>
+      <div class="homeRight">
+         <img src="./images/home-img.jpg" class="homeImg" />
+      </div>
+   </div>
+   <div class="about" id="about">
+      <h2><span>About</span> Us</h2>
+      <div class="aboutData">
+         <div class="aboutBox">
+            <h3>Why Choose Us?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quaerat,
+               natus exercitationem repellat facilis provident itaque veniam doloribus repellendus
+               delectus voluptas, asperiores, magnam maiores? Dolorum ratione odit ipsam corrupti corporis
+               fugiat qui quas commodi similique, dicta veritatis necessitatibus culpa aliquid, est, a sint.
+               Facilis blanditiis suscipit ex nisi ut libero corrupti delectus explicabo, sapiente unde laudantium
+               dolores obcaecati amet ad debitis expedita fugit autem incidunt animi nihil tenetur voluptas ratione
+               tempore tempora? Optio iusto velit modi fuga tempora neque quidem nam error tempore harum ipsum.</p>
+         </div>
+      </div>
+   </div>
+   <div class="tour" id="tours">
+      <h2><span>Popular Places</span></h2>
+      <div class="tourData">
+         <div class="tourBox">
+            <img src="images/tour-img-1.webp" class="tourImg" />
+            <h3>Taj Mahal</h3>
+            <p>Agra, India</p>
+            <a href="#">Book Now</a>
+         </div>
+         <div class="tourBox">
+            <img src="images/tour-img-2.webp" class="tourImg" />
+            <h3>Tokyo</h3>
+            <p>Tokyo, Japan</p>
+            <a href="#">Book Now</a>
+         </div>
+         <div class="tourBox">
+            <img src="images/tour-img-3.webp" class="tourImg" />
+            <h3>Hawaii</h3>
+            <p>Hawaii, United State</p>
+            <a href="#">Book Now</a>
+         </div>
+         <div class="tourBox">
+            <img src="images/tour-img-4.webp" class="tourImg" />
+            <h3>London</h3>
+            <p>England, UK</p>
+            <a href="#">Book Now</a>
+         </div>
+         <div class="tourBox">
+            <img src="images/tour-img-5.webp" class="tourImg" />
+            <h3>Lotus Temple</h3>
+            <p>New Delhi, India</p>
+            <a href="#">Book Now</a>
+         </div>
+         <div class="tourBox">
+            <img src="images/tour-img-6.webp" class="tourImg" />
+            <h3>Arc De Triamphe</h3>
+            <p>Paris, France</p>
+            <a href="#">Book Now</a>
+         </div>
+      </div>
+   </div>
+   <div class="destination" id="destination">
+      <h2>Destinations</h2>
+      <div class="destinationData">
+         <div class="destinationBox">
+            <img src="images/destination-1.jpg" class="destinationImg" />
+         </div>
+         <div class="destinationBox">
+            <img src="images/destination-2.jpg" class="destinationImg" />
+         </div>
+         <div class="destinationBox">
+            <img src="images/destination-3.jpg" class="destinationImg" />
+         </div>
+         <div class="destinationBox">
+            <img src="images/destination-4.jpg" class="destinationImg" />
+         </div>
+         <div class="destinationBox">
+            <img src="images/destination-5.jpg" class="destinationImg" />
+         </div>
+         <div class="destinationBox">
+            <img src="images/destination-6.jpg" class="destinationImg" />
+         </div>
+      </div>
+   </div>
+   <div class="contact" id="contact">
+      <h2><span>Contact</span> Us</h2>
+      <div class="contactData">
+            <iframe class="map"
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15077.086614958938!2d72.83608960687518!3d19.13958260781318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1672939645362!5m2!1sen!2sin">
+            </iframe>
+            <div class="collectData">
+               <h3>Get In Touch</h3>
+               <form method="post" action="formData.php">
+                  <input type="text" name="nm" placeholder="enter your name"/><br/>
+                  <input type="email" name="em" placeholder="enter your email"/><br/>
+                  <input type="text" name="nr" placeholder="enter your number"/><br/>
+                  <textarea name="tx"  placeholder="message..."></textarea><br/>
+                  <button type="submit" class="submitBtn">Send Message</button>
+               </form>
+            </div>
+      </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
